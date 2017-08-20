@@ -54,7 +54,7 @@
                   base
                   max-count)))
 
-过程
+;过程
 (define (square x) (* x x))
 (define (cube x) (* x x x))
 
@@ -62,7 +62,4 @@
     (if (= b 0)
         a
         (gcd b (remainder a b))))
-
-
-
 

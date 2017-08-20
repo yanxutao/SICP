@@ -345,7 +345,7 @@
                (search f a b))
               ((and (negative? b-value) (positive? a-value))
                (search f b a))
-              (else (error "Error!"))))))
+              (else (error "Error!")))))
 
 (half-interval-method sin 2.0 4.0)
 
@@ -522,7 +522,7 @@
     (display (y-point p))
     (display ")"))
 
-练习2.6
+;练习2.6
 
 (define (make-interval a b) (cons a b))
 (define (upper-bound interval) (car interval))
@@ -551,7 +551,7 @@
                       (make-interval (/ 1.0 (upper-bound y))
                                      (/ 1.0 (lower-bound y))))))
 
-练习2.11
+;练习2.11
 
 (define (make-center-width c w)
     (make-interval (- c w) (+ c w)))
